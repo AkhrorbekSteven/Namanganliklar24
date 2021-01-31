@@ -1,0 +1,308 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-header {
+    background-color: #F6F6F9;
+    padding-top: 44px;
+}
+.top-header {
+    display: flex;
+    align-items: center;
+}
+.site-logo {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #295091;
+    padding: 4px 8px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
+    border-radius: 5px;
+}
+.currencies {
+    display: flex;
+    margin-left: 17px;
+    margin-right: auto;
+}
+.currency {
+    margin-right: 25px;
+}
+.currency:nth-child(3) {
+    margin-right: 0;
+}
+.currency span {
+    font-size: 16px;
+    line-height: 19px;
+}
+.currency span:nth-child(1) {
+    color: #285193;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.currency span:nth-child(2) {
+    color: #A4A4A5;
+}
+button:focus {
+    outline: none;
+    border: none;
+}
+.search-btn {
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-btn img {
+    padding: 11px;
+}
+.languages {
+    margin-left: 22px;
+    padding: 11px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    border: none;
+    align-items: center;
+}
+.languages img {
+    display: block;
+}
+.languages p {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;   
+    color: #535353;
+    margin-left: 5px;
+}
+.join-telegram {
+    display: flex;
+    align-items: center;
+    padding: 11px;
+    background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+    border-radius: 5px;
+    margin-left: 24px;
+}
+.join-telegram img {
+    display: block;
+}
+.join-telegram p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-left: 5px;
+}
+.sitenav-list {
+    display: flex;
+    align-items: center;
+}
+.sitenav {
+    margin-top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px rgba(159, 159, 159, 0.19);
+    border-radius: 5px;
+    width: 100%;
+    padding: 22px;
+}
+.sitenav-list {
+    display: flex;
+    justify-content: space-between;
+}
+.sitenav-link {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    color: #515151;
+    transition: color 0.3s ease;
+}
+.sitenav-link:hover {
+    color: #295091;
+}
+.advert {
+    padding-top: 18px;
+    padding-bottom: 23px;
+}
+.advert img {
+    width: 100%;
+}
+
+.coronavirus {
+    margin-top: 22px;
+    background: #F6F6F9;
+    border-radius: 5px;
+}
+.coronavirus-list {
+    display: flex;
+    align-items: center;
+    padding: 30px 35px;
+}
+.coronavirus-item {
+    position: relative;
+}
+.coronavirus-item:nth-child(1)  {
+    border-right: 2px solid #EB5569;
+}
+.coronavirus-item:nth-child(1) p {
+    width: 232px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 70px;
+    line-height: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-right: 70px;
+}
+.coronavirus-item:nth-child(1) p::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    left: 0;
+    background: url('../img/covid.png') center/cover no-repeat;
+}
+.coronavirus-item:nth-child(2) {
+    border-right: 2px solid #F4CCD1;
+}
+.coronavirus-item:nth-child(2) p {
+    display: flex;
+    margin-right: 42px;
+    width: 170px;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 85px;
+}
+.coronavirus-item:nth-child(2) p span:nth-child(1) {
+    font-size: 18px;
+    line-height: 21px;
+    color: #DB0000;
+}
+.coronavirus-item:nth-child(2) p span:nth-child(2) {
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 500;
+}
+.coronavirus-item:nth-child(2) p::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    left: 30px;
+    background: url('../img/emojione-monotone_face-with-medical-mask.svg') center/cover no-repeat;
+}
+.coronavirus-item:nth-child(3) {
+    border-right: 2px solid #F4CCD1;
+}
+.coronavirus-item:nth-child(3) p {
+    display: flex;
+    margin-right: 42px;
+    width: 170px;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 85px;
+}
+.coronavirus-item:nth-child(3) p span:nth-child(1) {
+    font-size: 18px;
+    line-height: 21px;
+    color: #05B135;
+}
+.coronavirus-item:nth-child(3) p span:nth-child(2) {
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 500;
+}
+.coronavirus-item:nth-child(3) p::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    left: 30px;
+    background: url('../img/cil_smile.svg') center/cover no-repeat;
+}
+.coronavirus-item:nth-child(4) p {
+    display: flex;
+    width: 170px;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 85px;
+}
+.coronavirus-item:nth-child(4) p span:nth-child(1) {
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+.coronavirus-item:nth-child(4) p span:nth-child(2) {
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 500;
+}
+.coronavirus-item:nth-child(4) p::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    left: 30px;
+    background: url('../img/death-icon.svg') center/cover no-repeat;
+}
+.news-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 34px;
+}
+.news-item {
+    width: 390px;
+    border-radius: 5px;
+    margin-top: 18px;
+}
+.news-item a img {
+    width: 100%;
+    border-radius: 5px;
+}
+.news-item a p {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: 11px;
+    color: #202020
+}
+time {
+    margin-top: 11px;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 17px;
+    color: #6B6D97;
+}
