@@ -37,10 +37,12 @@ body {
     font-size: 28px;
     line-height: 33px;
     color: #295091;
+    text-transform: uppercase;
     padding: 4px 8px;
     background-color: #fff;
     box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
     border-radius: 5px;
+    letter-spacing: 1px;
 }
 .currencies {
     display: flex;
@@ -65,20 +67,26 @@ body {
 .currency span:nth-child(2) {
     color: #A4A4A5;
 }
-button:focus {
-    outline: none;
-    border: none;
-}
-.search-btn {
-    border: none;
-    background-color: #fff;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
+.magnifier {
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background-image: url('../img/search.svg');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    border-radius: 5px;
+    border: none;
+    transition: width 0.1s linear;
+    /* margin-right: 20px; */
 }
-.search-btn img {
-    padding: 11px;
+.magnifier:focus {
+	outline: none;
+	width: 150px;
+	background: none;
+	background-color: white;
 }
 .languages {
     margin-left: 22px;
@@ -88,6 +96,7 @@ button:focus {
     display: flex;
     border: none;
     align-items: center;
+    position: relative;
 }
 .languages img {
     display: block;
@@ -100,6 +109,22 @@ button:focus {
     line-height: 19px;   
     color: #535353;
     margin-left: 5px;
+}
+.languages-list {
+    position: absolute;
+    top: 100%;
+    display: none;
+    left: 0; 
+}
+.languages-item {
+    background-color: #fff;
+    display: flex;
+    border: none;
+    align-items: center; 
+    padding: 11px;
+}
+.languages:hover .languages-list {
+    display: block;
 }
 .join-telegram {
     display: flex;
@@ -119,6 +144,9 @@ button:focus {
     color: #FFFFFF;
     margin-left: 5px;
 }
+.join-telegram:hover {
+    background: linear-gradient(90deg, #37AEE2 15.07%, #1E96C8 85.96%);
+}
 .sitenav-list {
     display: flex;
     align-items: center;
@@ -135,6 +163,11 @@ button:focus {
     display: flex;
     justify-content: space-between;
 }
+.sitenav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .sitenav-link {
     font-weight: 500;
     font-size: 19px;
@@ -142,7 +175,19 @@ button:focus {
     color: #515151;
     transition: color 0.3s ease;
 }
-.sitenav-link:hover {
+.sitenav-item::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    border-radius: 2px;
+    transform: translateY(20px);
+    transition: width 0.5s ease;
+}
+.sitenav-item:hover::after {
+    width: 100%;
+}
+.sitenav-link:active {
     color: #295091;
 }
 .advert {
@@ -305,4 +350,41 @@ time {
     display: inline-block;
     line-height: 17px;
     color: #6B6D97;
+}
+.notification-wrapper {
+    background: rgba(239, 186, 84, 0.18);
+    border-radius: 5px;
+    padding: 33px 20px 33px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.notification-content {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+.notification-content::before {
+    content: "";
+    display: block;
+    width: 31px;
+    height: 35px;
+    background: url('../img/bell.svg') center/cover no-repeat;
+    margin-right: 17px;
+}
+.notification-btn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 8px;
+    background: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
+    border-radius: 5px;
+    border: none;
+}
+.notification-btn:focus {
+    outline: none;
 }
