@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-    width: 1300px;
+    width: 1250px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -387,4 +387,117 @@ time {
 }
 .notification-btn:focus {
     outline: none;
+}
+.main-news {
+    margin-top: 38px;
+    display: flex;
+    justify-content: space-between;
+}
+.left-side {
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left-side-header {
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.right-side {
+    width: 33%;
+    padding-top: 8px;
+}
+.main-news-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+}
+.main-news-item {
+    margin-bottom: 18px;
+}
+.main-news-link {
+    display: flex;
+    width: 100%;
+}
+.main-news-link img {
+    display: block;
+    margin-right: 20px;
+}
+.news-content {
+    display: flex;
+    flex-direction: column;
+    width: 512px;
+}
+.news-content h3 {
+    width: 507px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #202020;
+    margin-bottom: 8px;
+}
+.news-content p {
+    font-size: 15px;
+    line-height: 18px;
+    color: #434343;
+}
+.news-content time {
+    display: flex;
+}
+.news-content time::before {
+    content: " ";
+    display: block;
+    width: 17px;
+    height: 17px;
+    background: url('../img/calendar.svg') center/cover no-repeat;
+    margin-right: 4px;
+}
+.left-side-btn {
+    padding: 10px 32px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #295093;
+    border-radius: 5px;
+}
+.right-side-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #202020;
+    margin-bottom: 6px;
+}
+.right-side-content {
+    padding: 16px 20px 18px 20px;
+    background: #F6F6F9;
+    border-radius: 5px;
+}
+.right-side-link {
+    display: block;
+}
+.right-side-link p {
+    font-size: 17px;
+    margin-top: 18px;
+    line-height: 20px;
+    width: 347px;
+    color: #202020;
+}
+.right-side-item:first-child p {
+    margin-top: 0;
+}
+.right-side-item time {
+    margin-bottom: 14px;
+}
+.right-side-item {
+    border-bottom: 4px solid #E4E4E4;
+}
+.right-side img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 20px;
 }
