@@ -651,3 +651,62 @@ time {
 .footer-link:hover {
     color: rgba(255, 255, 255, 0.507);
 }
+
+.dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(68, 81, 102, 0.24);
+}
+.dialog-bar {
+    width: 400px;
+    background-color: #fff;
+    width: 821px;
+    padding: 15px;
+}
+.dialog-bar button {
+    display: block;
+    border: none;
+    background-color: #fff;
+    margin-left: auto;
+}
+.dialog-bar button img {
+    display: block;
+}
+button:focus {
+    outline: none;
+}
+.dialog-bar-content {
+    margin-top: 18px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    color: #295093;
+}
+.dialog-bar .join-telegram {
+    width: 225px;
+    margin-top: 30px;
+    margin-bottom: 17px;
+    padding: 12px 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dialog-bar .join-telegram p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+.dialog-close {
+    display: none;
+}
+.dialog-open {
+    display: flex;      
+}

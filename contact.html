@@ -152,5 +152,24 @@
             </div>
         </div>
     </footer>
+
+    <div class="dialog dialog-open">
+        <div class="dialog-bar">
+            <button id="dialogBtn"><img src="img/close.svg" alt="close-icon"></button>
+            <p class="dialog-bar-content">Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых последних новостей:</p>
+            <a href="#" class="join-telegram">
+                <img src="img/telegram.svg" alt="telegram-icon" width="30px">
+                <p>Подписатся</p>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let dialog = document.querySelector('.dialog')
+        dialogBtn.onclick = () => {
+            dialog.classList.remove('dialog-open')
+            dialog.classList.add('dialog-close')
+        }
+    </script>
 </body>
 </html>
