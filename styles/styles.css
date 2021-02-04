@@ -506,8 +506,14 @@ time {
 .right-side-item time {
     margin-bottom: 14px;
 }
+.right-side-item:last-child time {
+    margin-bottom: 0;
+}
 .right-side-item {
     border-bottom: 4px solid #E4E4E4;
+}
+.right-side-item:last-child {
+    border: none;
 }
 .right-side img {
     display: block;

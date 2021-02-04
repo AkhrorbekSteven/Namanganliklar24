@@ -1,0 +1,57 @@
+.main-news {
+    margin-bottom: 18px;
+}
+.left-side {
+    border-bottom: 2px solid #EBEBEB;
+    display: block;
+}
+.left-side-header {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+.left-side time {
+    display: flex;
+    margin-left: 0;
+    margin-bottom: 14px;
+}
+.left-side time::before {
+    content: " ";
+    display: block;
+    width: 17px;
+    height: 17px;
+    background: url('../img/calendar.svg') center/cover no-repeat;
+    margin-right: 4px;
+}
+.left-side img {
+    width: 100%;
+    margin-bottom: 17px;
+}
+.left-side p {
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+.left-side p:nth-child(1), .left-side p:nth-child(4) {
+    font-weight: 500;
+}
+.heshteg {
+    font-size: 18px;
+    line-height: 21px;
+    color: #28508E;
+    margin-bottom: 20px;
+}
+.heshteg a {
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+.heshteg a:hover {
+    color: #183a6da6;
+}
+.main-last-heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
