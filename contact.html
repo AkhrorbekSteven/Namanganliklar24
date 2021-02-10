@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
     <title>Namanganliklar 24</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -80,12 +87,11 @@
                 <input type="tel" name="tel" placeholder="Номер телефона" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
                 <input type="text" name="theme" placeholder="Тема">
                 <textarea name="textarea" cols="30" rows="10" placeholder="Текст"></textarea>
-                <label>
-                    <input class="file" type="text" name="file" placeholder="Прикрепить файл">
-                    <span class="file-upload">
+                <label for="file" class="file">Прикрепить файл</label>
+                <input class="visually-hidden" type="file" id="file" name="file">
+                    <!-- <span class="file-upload">
                         <img src="img/file-upload.svg" alt="file" width="24px">
-                    </span>
-                </label>
+                    </span> -->
                 <input type="password" name="password" placeholder="Код">
                 <input type="submit" name="submit" value="Отправить">
             </form>
